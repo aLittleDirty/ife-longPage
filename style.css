@@ -1,6 +1,296 @@
-header{
-    background-image: url(image/前端学院设计图_01.gif);
+*{
+    padding: 0;
+    margin:0;
 }
-.forestPage{
-    background-image: url(image/前端学院设计图_03.png);
+html,body{
+    height: 100%;
+}
+header{
+    background: url(image/前端学院设计图_01.gif) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+    
+}
+header h1{
+    font-weight: lighter;
+    font-size: 42px;
+    color:rgba(255, 255, 255, 0.8);
+    padding-top:10%;
+}
+header>p{
+    font-weight: lighter;
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.4);
+
+    width:50%;
+    display: inline-block;
+    padding: 60px;
+   
+}
+header .signBox{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 50%;
+    display: inline-block;
+    padding: 20px 0 30px 0;
+}
+header .signBox p:nth-of-type(1){
+    font-size: 16px;
+    color:rgba(255, 255, 255,0.7);
+    padding: 10px;
+}
+header .signBox p:nth-of-type(2){
+    font-size: 12px;
+    color:rgba(255, 255, 255,0.3);
+  padding-bottom: 25px;
+}
+header .signBox input{
+    background-color: transparent;
+    border:1px solid rgba(255, 255, 255, 0.4);
+    padding: 7px;
+    margin: 10px;
+}
+header .signBox button{
+    padding:7px;
+    font-size: 12px;
+}
+
+section.iconPage{
+    height: 70%;
+    text-align: center;
+    margin: 0 auto;
+    width:70%;
+}
+section.iconPage>p:nth-of-type(1){
+    padding:30px 0 20px 0;
+    font-size: 16px;
+}
+section.iconPage>p:nth-of-type(2){
+padding: 10px 10px 40px 10px;
+font-size:24px;
+display: inline-block;
+}
+section.iconPage article{
+     float: left; 
+     width: 45%;
+    padding: 10px;
+    text-align: left;
+} 
+section.iconPage article img{
+    float: left;
+}
+section.iconPage article p:nth-of-type(2){
+    font-size: 14px;
+    font-weight: lighter;
+    padding-top:10px; 
+}
+
+section.forestPage{
+    background: url(image/前端学院设计图_03.png) no-repeat center center;
+    background-size:cover;
+    height: 100%;
+    padding-left:15%; 
+}
+section.forestPage p{
+    width:30%;
+    text-align: left;
+    font-weight: lighter;
+}
+section.forestPage p:first-of-type{
+    padding-top:10%;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.8);
+
+   
+}
+section.forestPage p:nth-of-type(2){
+padding: 4% 0;
+color: rgba(255, 255, 255, 0.5);
+}
+section.forestPage button{
+    border: 1px solid rgba(255, 255, 255,0.3);
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+/* 背景镂空字体设置未完成 */
+/* section.forestPage button:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+section.threeColumnsPage{
+    height: 70%;
+    text-align: center;
+    border-bottom: 1px solid rgba(219,219,219,0.5);
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+section.threeColumnsPage>p{
+    padding: 3%;
+    width: 100%;
+font-size: 36px;
+font-weight: lighter;
+}
+section.threeColumnsPage article{
+    width: 20%;
+    padding: 5%;
+}
+section.threeColumnsPage article img{
+    width: 70%;
+    height: auto;
+}
+section.floatPage{
+    width: 100%;
+    border-bottom: 1px solid rgba(219,219,219,0.5);
+}
+section.floatPage p{
+    padding: 30px 0;
+    line-height: 30px;
+}
+section.floatPage img:nth-of-type(1){
+    padding: 5%;
+    width:50%;
+    float: left;
+}
+section.floatPage article:nth-of-type(1){
+    width: 30%;
+    padding: 5%;
+    float: right;
+   margin-top:3%;
+}
+section.floatPage article:nth-of-type(2){
+    width: 35%;
+    padding: 5%;
+    float: left;
+   margin-top:4%;
+
+}
+section.floatPage img:nth-of-type(2){
+    width:45%;
+    padding: 5%;
+    float: right;
+}
+section.floatPage:after{
+    content:"";
+    width: 0;
+    display: block;
+    clear: both;
+}
+section.photoPage{
+    padding: 5%;
+    border-bottom: 1px solid rgba(219,219,219,0.5);
+    text-align: center;
+}
+section.photoPage h2{
+font-size:34px;
+font-weight: lighter;
+}
+section.photoPage p{
+    width: 60%;
+    padding: 2%;
+    display: inline-block;
+    font-weight: lighter;
+    line-height: 30px;    
+}
+section.photoPage img{
+    width: 40%;
+    height: auto;
+}
+section.sendPage{
+    border-bottom:  1px solid rgba(219,219,219,0.5);
+    display: flex;
+    justify-content: center;
+    
+}
+section.sendPage .sendInput{
+    border: 1px solid rgba(219,219,219);
+    width: 30%;
+    margin: 4%;
+    text-align: center;
+}
+section.sendPage .sendInput p{
+    font-weight: bold;
+    padding: 10%;
+}
+section.sendPage .sendInput input{
+    font-size:16px;
+    margin:10px;
+    padding: 5px;
+    border: 1px solid rgba(219,219,219);
+
+
+}
+section.sendPage .sendInput textarea{
+    width:195px;
+    font-size: 16px;
+    margin:10px;
+    padding: 5px;
+    height: 150px;
+    border: 1px solid rgba(219,219,219);
+}
+section.sendPage .sendInput button{
+    width: 205px;
+    padding: 7px 20px;
+    margin: 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    background-color:rgba(0,0,0);
+}
+ section.sendPage .introduction{
+    width: 40%;
+    margin: 4%;
+    padding: 2%;
+} 
+section.sendPage .introduction h2{
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 30px 0;
+} 
+section.sendPage .introduction>p{
+    font-weight: lighter;
+    line-height: 30px;
+    padding-bottom:30px; 
+}
+section.sendPage .introduction article{
+    height: 50px;
+    padding: 10px 0;
+
+}
+section.sendPage .introduction article img{
+    float: left;
+}
+section.sendPage .introduction article p{
+    padding-left:70px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgba(255, 255, 255,0.5);
+    background-color: rgba(0,0,0,0.9);
+    padding: 30px;
+}
+footer ul{
+    flex-basis: 20%;
+}
+footer ul:nth-of-type(4){
+    flex-basis: 30%;
+}
+footer ul li:nth-of-type(1){
+    font-weight: bold;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul img{
+    width: 200px;
+    height: auto;
+    padding-top:20px; 
 }
